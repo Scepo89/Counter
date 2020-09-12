@@ -14,7 +14,7 @@ btns.forEach(function(btn){
             count=0;
             value.style.color="red";
         }else {
-            value.style.color="green"
+            value.style.color="green";
             count++;
         };
        
