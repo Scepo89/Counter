@@ -9,10 +9,15 @@ btns.forEach(function(btn){
         const styles=e.currentTarget.classList;//check e event and its method detailed on documentation
         if(styles.contains('decrease')){
             count--;
+            value.style.color="green";
         }else if(styles.contains('reset')){
             count=0;
-        }else count++;
-        
+            value.style.color="red";
+        }else {
+            value.style.color="green"
+            count++;
+        };
+       
 
         value.textContent=count;
     });
